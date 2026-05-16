@@ -1,0 +1,30 @@
+# robots.txt for yes.mrt-offer.co.kr
+# 모든 검색 엔진에 대한 규칙
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /duplicate.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /images/
+
+# 특정 검색 엔진 규칙
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# 금지된 경로
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# 사이트맵 위치
+Sitemap: https://yes.mrt-offer.co.kr/sitemap.xml
+
+# 크롤링 속도 제한
+Request-rate: 1 request per 1 second
